@@ -1,0 +1,149 @@
+@import clases-comun
+@import '../utils/colores'
+
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #111111bd
+    display: flex
+    opacity: 0
+    pointer-events: none
+.modal--show
+    opacity: 1
+    pointer-events: unset
+
+    .modal__contendor
+        margin: auto
+        width: 528px
+        background-color: $color-blanco
+        text-align: end
+        border-radius: 4px
+
+        .modal__contendor__close
+            display: inline-block
+            width: 30px
+            height: 30px
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            background-color: $color-blanco
+            border-radius: 50%
+            fill: $color-negro
+            margin: 10px 8px 0
+            text-align: center
+            .modal__contendor__close__link
+                outline: none
+
+                .cerrar
+                    margin: 10px
+                    fill: $color-negro
+                    &:hover
+                        fill: $color_azul
+                        cursor: pointer
+        .modal__titulo
+            color: $color-negro
+            letter-spacing: $letter-spacing-2
+            font-weight: 700
+            line-height: 23px
+            font-size: 1.42em
+            text-align: center
+        .modal__formulario
+            padding: 12px 40px 0 40px
+
+            .input
+
+                border-radius: 4px
+                border: 1px solid rgba(33, 33, 33, 0.2)
+                width: 448px
+                height: 40px
+                margin: 4px 0 0
+                padding: 14px
+
+                &:hover
+                    cursor: pointer
+                &:focus
+                    outline: none
+                    border-color: $color_azul
+
+            .text-area
+                margin: 4px 0 0
+                max-width: 448px
+                max-height: 120px
+                min-width: 448px
+                min-height: 120px
+                padding: 12px 16px
+                border-radius: 4px
+                border: 1px solid rgba(33, 33, 33, 0.2)
+                display: block
+                font-family: inherit
+                font-size: 100%
+                line-height: 1.15
+                &:placeholder
+                    color: $color_azul
+                &:focus
+                    outline: none
+                    border-color: $color_azul
+                &:hover
+                    cursor: pointer
+
+            .terminos
+                margin: 20px
+                display: flex
+                justify-content: space-evenly
+                .checkbox
+                    line-height: 32px
+                input
+                    &[type="checkbox"]
+                        width: 16px
+                        height: 15px
+                        border-radius: 2px
+
+                .descripcion_terminos
+                    text-align: start
+                    line-height: 24px
+                    letter-spacing: 0.03em
+                    padding-left: 7px
+                    color: $color-parrafo
+
+            .modal__formulario__dato
+                text-align: start
+                padding: 5px 0
+                input
+                    padding: 14px 0 14px 42px
+                    &:focus~svg.input-icon
+                        border-color: $color_azul
+                        cursor: pointer
+                        fill: $color_azul
+                label
+                    color: $color-parrafo
+                    font-weight: 400
+                    left: 0.01em
+                    line-height: 14px
+                .input-icon
+                    fill: $color-negro
+                    width: 13px
+                    height: 13px
+                    position: relative
+                    top: -28px
+                    left: 16px
+
+            .boton__form
+                text-align: center
+
+                .enviar
+                    width: 200px
+                    padding: 10px 75px
+                    border: none
+                    background: $color_azul
+                    color: $color-blanco
+                    border-radius: 4px
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+                    letter-spacing: $letter-spacing-1
+                    font-weight: 700
+                    line-height: 30px
+                    font-size: 1.14em
+                    margin-bottom: 40px
+                    &:hover
+                        cursor: pointer

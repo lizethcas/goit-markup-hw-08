@@ -1,0 +1,213 @@
+@import '../utils/colores'
+
+@media screen and (max-width: 1024px )
+    header
+
+        .header__contenedor
+            align-items: center
+            width: 100%
+            padding: 10px 0 15px
+            margin: auto
+            .logo
+                font-size: 1.71em
+
+            .header__enlaces
+                align-items: center
+                justify-content: space-evenly
+                .email
+                    margin-right: 0
+                .email,
+                .contact
+                    font-size: 0.85em
+                    .icon
+                        margin-right: 8px
+
+            .contacto
+                flex-direction: column
+                width: 150px
+                align-items: flex-start
+
+    main
+
+        .contenedor
+            width: 100%
+            .contenedor__items
+                ul
+                    width: 100%
+                    flex-wrap: wrap
+                    justify-content: center
+
+                li
+                    .contenedor__items__card
+                        width: 340px
+                        .contenedor__items__card__img
+                            width: 340px
+
+        .seccion
+            margin-bottom: 0
+
+        .dedicamos
+            display: none
+
+        .seccion__page
+            max-width: 100%
+            margin-bottom: 0
+            .seccion__page_titulo
+                margin-top: 60px
+                font-size: 2em
+
+            .seccion__page__clientes
+
+                padding: 30px 15px 60px 15px
+                flex-wrap: wrap
+                gap: 30px
+                justify-content: center
+                .seccion__page__clientes__container
+                    .seccion__page__clientes__container__svg-icon
+                        width: 220px
+
+            .seccion__page__contenedor
+                flex-wrap: wrap
+                padding: 60px 15px
+                gap: 30px
+                justify-content: center
+
+                .seccion__page__items
+                    max-width: 354px
+                    width: 354px
+                    img
+                        max-width: 354px
+                        width: 354px
+                    .seccion__page__parrafoitems,
+                    .seccion__page__tituloitems
+                        text-align: start
+
+        .page
+            margin-bottom: 0
+
+            .page__equipo
+                width: 100%
+                .Page__titulo
+                    font-size: 2em
+                h2
+
+                    margin: 60px auto 30px auto
+
+                ul
+                    flex-wrap: wrap
+                    gap: 30px
+                    padding: 0 15px
+                    justify-content: center
+                    .page__equipo__card
+                        height: 500px
+                        .page__equipo__card_item_redes__social
+                            margin: 16px 0 24px
+                        img
+                            width: 354px
+
+    footer
+        .seccion__page
+            max-width: 100%
+            padding: 60px 80px
+            margin: 0 auto
+            .seccion__page__social
+                flex-wrap: wrap
+                .seccion__page__redes__titulo
+                    text-align: center
+
+                .seccion__page__boletin
+                    text-align: center
+                    margin: auto
+                    margin-top: 54px
+                    .suscribirse
+                        margin-left: 0
+                        margin-top: 20px
+                    .input
+                        width: 450px
+    .modal
+        .modal__contendor
+            width: 450px
+            .modal__titulo
+                width: 370px
+                margin: auto
+
+            .modal__formulario
+                .modal__formulario__dato
+                    padding: 0
+                    font-size: 0.85em
+                .terminos
+
+                    .descripcion_terminos
+                        font-size: 0.85em
+                        line-height: 14px
+                .text-area
+
+                    min-width: 370px
+                .input
+                    width: 370px
+@media screen and (max-width: 768px )
+
+    main
+        .contenedor
+            .contenedor__botones 
+                ul
+                    flex-wrap: wrap
+                    max-width: 100%
+            .contenedor__items
+                ul
+                    li
+                        .contenedor__items__card
+                            width: 350px
+                            .contenedor__items__card__img
+                                width: 350px
+                                img
+                                    width: 350px
+
+        .contenedor__botones
+            width: 80%
+
+            margin: auto
+            ul
+                flex-wrap: wrap
+
+        .seccion
+            .seccion__contenedor
+                width: 360px
+            .seccion__titulo
+                font-size: 1.85em
+                line-height: 42px
+
+@media screen and (max-width: 750px )
+    header
+        .header__contenedor
+            font-size: 1.71em
+            padding: 16px 15px
+            .header__enlaces
+                display: none
+
+    main
+        .page
+            .page__equipo
+                ul
+                    flex-direction: column
+                    align-items: center
+
+        .seccion__page
+            .seccion__page__contenedor
+                flex-direction: column
+                align-items: center
+    footer
+        .seccion__page
+            padding: 60px 15px
+
+@media screen and (max-width: 525px )
+
+    footer
+        .seccion__page
+            text-align: center
+            .seccion__page__social
+                flex-direction: column
+                .seccion__page__redes
+                    padding: 60px 0 0 0
+                    .social
+                        margin: auto

@@ -1,0 +1,92 @@
+@import '../utils/colores'
+
+main
+    margin-bottom: -151px
+    .contenedor
+        width: 1200px
+        margin: 94px auto
+        padding: 0.1px
+        .contenedor__items
+            padding-top: 50px
+
+        .contenedor__botones
+
+            ul
+                list-style: none
+                width: 579px
+                display: flex
+                margin: auto
+                gap: 8px
+
+                .contenedor__botones__boton
+                    padding: 4px 10px
+                    width: auto
+                    height: 30px
+                    border: none
+                    font-size: 1.142em
+                    letter-spacing: $letter-spacing-2
+                    border-radius: 4px
+                    color: $color-negro
+                    font-weight: 500
+                    
+                    &:hover
+                        background: $color_azul
+                        color: $color-blanco
+                        cursor: pointer
+        .contenedor__items
+
+            ul
+                width: $with-contenedor
+                display: flex
+                flex-wrap: wrap
+                gap: 30px
+                .contenedor__item
+                    width: 370px
+                    height: 294px
+                    background: $color-blanco
+                li
+                    list-style: none
+
+                    .contenedor__items__card
+                        width: 370px
+                        height: 404px
+                        background: $color-blanco
+                        border: 1px solid #EEEEEE
+                        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+                        cursor: pointer
+                        .contenedor__items__card__img
+                            position: relative
+                            overflow: hidden
+                            width: 370px
+                            height: 294px
+                            &:hover
+                                & .contenedor__items__card__plabel
+                                    transform: translateY(0)
+                            .contenedor__items__card__plabel
+                                background: rgba(33, 150, 243, 0.9)
+                                color: $color-blanco
+                                padding: 63px 24px
+                                line-height: 28px
+                                font-size: 1.28em
+                                letter-spacing: $letter-spacing-1
+                                transform: translatey(135%)
+                                transition: transform 250ms ease
+                                position: absolute
+                                top: 0%
+
+                        .contenedor__items__card__trabajos
+                            padding: 20px 24px
+
+                            .contenedor__items__card__titulo
+                                margin-bottom: 4px
+                                line-height: 36px
+                                color: $color-negro
+                                font-weight: 700
+                                letter-spacing: $letter-spacing-1
+                                font-size: 1.285em
+
+                            .contenedor__items__card__descripcion
+                                color: $color-parrafo
+                                font-size: 1.142em
+                                letter-spacing: $letter-spacing-2
+                                line-height: 30px

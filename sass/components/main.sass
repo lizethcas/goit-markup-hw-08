@@ -1,0 +1,174 @@
+@import '../utils/colores'
+
+@import clases-comun
+
+@each $servicios in desk, movil, desing
+    .#{$servicios}-app
+        background-image: url('../imagenes/#{$servicios}.jpg')
+
+main
+    padding: 0.1px
+    .seccion
+        height: 600px
+        background: linear-gradient(45deg, rgba(47, 48, 58, 0.5) 100%, rgba(47, 48, 58, 0.5) 100%), url('../imagenes/fondo.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 0.1px
+        margin-bottom: $margin-section
+
+        .seccion__contenedor
+            margin: 200px auto
+            width: 696px
+            text-align: center
+
+        .seccion__titulo
+            color: $color-blanco
+            font-size: 3.142em
+            font-weight: 900
+            line-height: 60px
+            letter-spacing: $letter-spacing-1
+            margin-bottom: 30px
+        .seccion__boton
+            text-decoration: none
+            color: $color-blanco
+            background: $color_azul
+            padding: 10px
+            border-radius: 4px
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+            font-weight: 700
+            letter-spacing: $letter-spacing-1
+            &:hover
+
+                cursor: pointer
+    .seccion__page
+        width: $with-contenedor
+        margin: auto
+        margin-bottom: $margin-section
+        text-align: center
+        &:nth-child(3)
+            margin-bottom: 151px
+        .seccion__page__clientes
+            display: flex
+            justify-content: space-between
+            .seccion__page__clientes__container
+                border: 1px solid #AFB1B8
+                border-radius: 4px
+                height: 92px
+                &:hover
+                    border: 1px solid $color_azul
+                    cursor: pointer
+                .seccion__page__clientes__container__svg-icon
+                    width: 170px
+                    height: 92px
+                    fill: $color-fill
+                    &:hover
+                        fill: $color_azul
+                        border: 1px solid $color_azul
+
+        .seccion__page__contenedor
+
+            display: flex
+            justify-content: space-between
+            .seccion__page__items
+                width: 270px
+                .seccion__page__tituloitems
+                    color: $color-negro
+                    font-weight: 700
+                    text-transform: uppercase
+                    line-height: 16px
+                    margin-top: 30px
+                    margin-bottom: 10px
+                    letter-spacing: $letter-spacing-2
+                .seccion__page__parrafoitems
+                    color: $color-parrafo
+                    font-weight: 400
+                    letter-spacing: $letter-spacing-2
+                    line-height: 24px
+        .seccion__page_titulo
+            text-align: center
+            font-size: 2.571em
+            line-height: 42px
+            font-weight: 700
+            margin-bottom: 50px
+            color: $color-negro
+        .seccion__page__servicios
+            ul
+                list-style: none
+                display: flex
+                justify-content: space-between
+                padding: 0.1px
+                .seccion__page__contservicios
+                    background-repeat: no-repeat
+                    width: 370px
+                    padding: 0.1px
+
+                    .seccion__page__titulo
+                        background: rgba(47, 48, 58, 0.8)
+                        height: 70px
+                        text-align: center
+                        margin-top: calc(294px - 49px)
+
+                        h2
+                            line-height: 70px
+                            color: $color-blanco
+
+    .page
+        background: $color-seccion
+        padding: 0.1px
+        margin-bottom: $margin-section
+        .page__equipo
+            .Page__titulo
+                text-align: center
+                font-size: 2.571em
+                line-height: 42px
+                font-weight: 700
+                margin-bottom: 50px
+                color: $color-negro
+        .page__equipo
+            width: $with-contenedor
+            margin: auto
+            h2
+                margin-top: $margin-section
+            .page__equipo__cards
+                margin-bottom: $margin-section
+            ul
+                list-style: none
+                display: flex
+                justify-content: space-between
+                .page__equipo__card
+                    height: 428px
+                    background: $color-blanco
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)
+                    border-radius: 0px 0px 4px 4px
+
+                    .page__equipo__card_item
+                        text-align: center
+                        .page__equipo__card_item__nombre
+                            padding: 30px 0 10px 0
+                            color: $color-negro
+                            font-weight: 500
+                            font-size: 1.142em
+                            line-height: 19px
+                            letter-spacing: $letter-spacing-2
+                        .page__equipo__card_item__profesion
+                            font-size: 1.142em
+                            color: $color-parrafo
+                            letter-spacing: $letter-spacing-2
+                            line-height: 19px
+
+                            .page__equipo__card_item_redes__social
+                                width: 44px
+                                height: 44px
+                                border-radius: 50%
+                                fill: $color-fill
+                                margin: 16px auto 30px auto
+
+                                &:hover
+                                    background: $color_azul
+                                    cursor: pointer
+                                    fill: $color-blanco
+
+                                .svg
+                                    width: 20px
+                                    margin: 10px auto
+                                    object-fit: fill

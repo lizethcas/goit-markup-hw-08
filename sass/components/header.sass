@@ -1,0 +1,47 @@
+@import '../utils/colores'
+
+@import clases-comun
+
+header
+    background: $color-blanco
+    padding: 1px
+    height: 80px
+    border-bottom: 1px solid $color-borde
+    .header__contenedor
+        width: $with-contenedor
+        margin: 24px auto
+        display: flex
+        justify-content: space-between
+
+        .header__logo
+            text-decoration: none
+            margin-right: 0
+            color: $color_azul
+            font-weight: 700
+            font-family: 'Raleway', sans-serif
+            cursor: pointer
+            font-size: 26px
+        .header__enlaces
+            width: 350px
+            display: flex
+            justify-content: space-between
+            list-style: none
+
+            .header__enlaces__menu
+                text-decoration: none
+                color: $color-negro
+                line-height: 31px
+                font-weight: 500
+
+                &:hover
+                    color: $color_azul
+            .contact
+                color: $color-parrafo
+                .icon
+                    margin-right: 10px
+            .email
+                margin-right: 30px
+            .header__enlaces
+                width: 161px
+                &:hover
+                    color: $color_azul

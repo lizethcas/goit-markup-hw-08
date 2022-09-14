@@ -1,0 +1,61 @@
+@import '../utils/colores'
+
+.logo
+    text-decoration: none
+    margin-right: 0
+    color: $color_azul
+    font-weight: 700
+    font-family: 'Raleway', sans-serif
+    cursor: pointer
+    font-size: 26px
+.page__equipo__card_item_redes
+    width: 206px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    text-align: center
+.page__equipo__card_item_redes__social
+    width: 44px
+    height: 44px
+    border-radius: 50%
+    fill: $color-fill
+    margin: 16px auto 30px auto
+    &:hover
+        background: $color_azul
+        cursor: pointer
+        fill: $color-blanco
+.svg
+    width: 20px
+    margin: 10px auto
+    object-fit: fill
+.seccion__page__redes__titulo
+    font-weight: 700
+    line-height: 16px
+    letter-spacing: $letter-spacing-2
+    margin-bottom: 20px
+#portafolio::after,
+#estudio::after
+    content: ""
+    background-size: contain
+    display: flex
+    flex-wrap: wrap
+    padding-bottom: 21px
+    border-bottom: 4px solid $color_azul
+    color: $color_azul
+#text-area::placeholder
+    color: rgba(117, 117, 117, 0.5)
+    line-height: 14px
+    font-size: 0.85em
+    letter-spacing: 0.01em
+
+@media screen and (max-width: 1024px)
+    #portafolio::after,
+    #estudio::after
+        content: ""
+        background-size: contain
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: -22px
+        border-bottom: 2px solid $color_azul
+        color: $color_azul
+   
